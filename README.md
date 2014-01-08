@@ -2,6 +2,8 @@
 
 ##Learning Competencies
 
+* Implement Binary Search
+
 ##Summary
 
 Children who are learning arithmetic sometimes play a number-guessing game:
@@ -22,9 +24,10 @@ If you want to read more, check out the [Wikipedia article](http://en.wikipedia.
 
 <cite>Source: Chris Pine, [Learn to Program](http://pine.fm/LearnToProgram/): | [Programming Praxis](http://programmingpraxis.com/2009/03/23/binary-search/)</cite>
 
-## Objectives
 
-### Ensuring accuracy
+##Releases
+
+###Release 0 : Ensuring accuracy
 
 Write a suitable test program that shows the accuracy of your binary search method. Test your method against a variety of inputs. Does it always return the correct answer?
 
@@ -40,7 +43,7 @@ puts binary_search(35, test_array) == -1
 # => true
 ```
 
-### Write the algorithm
+###Release 1 : Write the algorithm
 
 Your first task is to write a method that takes a target number and a **sorted** array of numbers in non-decreasing order and returns either the position of the number in the array, or `-1` to indicate the target number is not in the array. For instance, `binary_search(32, [13, 19, 24, 29, 32, 37, 43])` should return `4`, since `32` is the fourth element of the array (counting from zero).
 
@@ -50,9 +53,7 @@ You can't use `Array#index`. Sorry. The point is to build a binary search from s
 
 HINT: Here's an implementation of binary search in [Javascript](http://codereview.stackexchange.com/questions/5363/efficient-binary-search). You can start creating your pseudocode with this as a model if you like.
 
-##Releases
-###Release 0
 
-##Optimize Your Learning
+<!-- ##Optimize Your Learning -->
 
 ##Resources
