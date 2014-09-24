@@ -27,11 +27,40 @@ If you want to read more, check out the [Wikipedia article](http://en.wikipedia.
 
 ##Releases
 
-###Release 0 : Ensuring accuracy
+###Release 0 : Write the [MVP](http://en.wikipedia.org/wiki/Minimum_viable_product) algorithm
 
-Write a suitable test program that shows the accuracy of your binary search method. Test your method against a variety of inputs. Does it always return the correct answer?
+Start by writing an algorithm that satisfies the minumum viable product (MVP) for binary search.  Your algorithm should take a target number and a **sorted** array of numbers in non-decreasing order and return `true` or `false` to indicate if the number exists in the array.  
 
-A basic testing program could look like this (yours should test more examples):
+```ruby
+binary_search(32, [24, 29, 32, 37, 43])  # => true  (because `32` is in the array)
+```
+
+Start with pseudocode! What are the steps?  Using specific examples for input can be extremely helpful for fleshing out your pseudocode.  Remember to start with **simple** test input like `binary_search(3, [0, 3, 4, 7])`.  Allow some repetition of your code so you can notice the repetition and refactor accordingly.
+
+*You can't use `Array#.include?`. Sorry. The point is to build a binary search from scratch, not use Ruby's built in search methods. Also, don't use `Array#index`.*
+
+
+###Release 1 : Write the full-fledged algorithm
+
+Now we want to be able to know **where** in a sorted array a target number is.  Instead of returning `true` or `false`, your algorithm should return the position of the number in the array. 
+
+```ruby
+binary_search(32, [13, 19, 24, 29, 32, 37, 43])  # => 4
+# since `32` is the fourth element of the array (counting from zero)
+```
+
+If the number is not in the array, your algorithm should return `-1`.
+
+You should be able to use your initial release 0 algorithm to help you, but there is a deeper challenge hidden in this full-fledged version.  Walking through this test may shed some light on the new complexity:  `binary_search(37, [13, 19, 24, 29, 32, 37, 43])`.  
+
+*HINT: Here's an implementation of binary search in [Javascript](http://codereview.stackexchange.com/questions/5363/efficient-binary-search). You can refer to this approach https://gist.github.com/brickthorn/782515a10b73d90bab9ato help create your new pseudocode if you like.*
+
+
+###Release 2: Ensuring accuracy with tests
+
+Write suitable tests that ensure the accuracy of your binary search method. Test your method against a variety of inputs. Does it always return the correct answer?
+
+A basic test suite might have tests like this (yours should have more examples):
 
 ```ruby
 test_array = (100..200).to_a
@@ -43,17 +72,5 @@ puts binary_search(35, test_array) == -1
 # => true
 ```
 
-###Release 1 : Write the algorithm
+Make sure you cover both the common cases and the edge cases!  A robust testing suite will allow you to refactor or extend your code with confidence (and without much manual testing).
 
-Your first task is to write a method that takes a target number and a **sorted** array of numbers in non-decreasing order and returns either the position of the number in the array, or `-1` to indicate the target number is not in the array. For instance, `binary_search(32, [13, 19, 24, 29, 32, 37, 43])` should return `4`, since `32` is the fourth element of the array (counting from zero).
-
-Start with pseudocode! What are the steps? What's the end case? Spell it out before jumping into ruby.
-
-You can't use `Array#index`. Sorry. The point is to build a binary search from scratch, not use Ruby's built in search methods. Also, don't use `Array#.include?`.
-
-HINT: Here's an implementation of binary search in [Javascript](http://codereview.stackexchange.com/questions/5363/efficient-binary-search). You can start creating your pseudocode with this as a model if you like.
-
-
-<!-- ##Optimize Your Learning -->
-
-##Resources
