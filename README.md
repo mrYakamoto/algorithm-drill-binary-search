@@ -53,8 +53,6 @@ If the number is not in the array, your algorithm should return `-1`.
 
 You should be able to use your initial release 0 algorithm to help you, but there is a deeper challenge hidden in this full-fledged version.  Walking through this test may shed some light on the new complexity:  `binary_search(37, [13, 19, 24, 29, 32, 37, 43])`.  
 
-*HINT: Here's an implementation of binary search in [Javascript](http://codereview.stackexchange.com/questions/5363/efficient-binary-search). You can refer to this approach https://gist.github.com/brickthorn/782515a10b73d90bab9ato help create your new pseudocode if you like.*
-
 
 ###Release 2: Ensuring accuracy with tests
 
