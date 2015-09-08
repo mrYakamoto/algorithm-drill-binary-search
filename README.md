@@ -62,7 +62,7 @@ binary_search(:X, symbols)
 ```
 *Figure 3*. Example binary search method usage.
 
-Now it's time to mimic the behavior of `Array#index` by implementing a binary search algorithm.  We'll write a `binary_search` method that accepts to arguments:  an object and a sorted array.  The method returns the index where a specific value is found or `nil` if it's not found.  (see Figure 3)
+Now it's time to mimic the behavior of `Array#index` by implementing a binary search algorithm.  We'll write a `binary_search` method that accepts two arguments:  an object and a sorted array.  The method returns the index where a specific value is found or `nil` if it's not found.  (see Figure 3)
 
 Again, we'll want to have a test suite that ensures the accuracy of our binary search method.  We need to cover both common cases and edge cases.
 
