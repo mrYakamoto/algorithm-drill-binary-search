@@ -84,5 +84,6 @@ Familiarity with binary search might even help us if we end up playing the [Cloc
 [Programming Pearls]: http://www.amazon.com/Programming-Pearls-Press-Louis-Bentley/dp/0201103311/
 [red, green, refactor]: http://www.jamesshore.com/Blog/Red-Green-Refactor.html
 [rubydocs Array#index]: http://ruby-doc.org/core-2.1.0/Array.html#method-i-index
+[Ruby style guide]: https://github.com/bbatsov/ruby-style-guide
 [The Art of Computer Programming]: http://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/
 [wikipedia binary search]: http://en.wikipedia.org/wiki/Binary_search_algorithm
