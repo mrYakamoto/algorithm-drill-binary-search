@@ -48,7 +48,7 @@ Beginning with pseudocode might also be beneficial.
 
 **Restrictions**
 
-We need to write our method without replying on Ruby's built in `Array` and `Enumerable` methods.  The only methods we may call on the array we're searching are `Array#[]` and `Array#length`.  We are free to use keywords like `for`, `while`, or `until`.
+We need to complete this challenge without relying on Ruby's built in `Array` and `Enumerable` methods.  The only methods we may call on the array we're searching are `Array#[]` and `Array#length`.  We are free to use keywords like `for`, `while`, or `until`.
 
 
 ### Release 1: Where is the Value Found?
@@ -68,7 +68,7 @@ Again, we'll want to have a test suite that ensures the accuracy of our binary s
 
 
 ### Release 2: Refactor
-Before we conclude this challenge, let's read through our code to see if we might be able to improve it.  Have we followed the Ruby style guide (e.g., spacing and indentation)?  Could our variable names be more descriptive?  Are there any code smells that we can eliminate?  For example, are there any methods we could extract from our `binary_search` method?
+Before we conclude this challenge, let's read through our code to see if we might be able to improve it.  Have we followed the [Ruby style guide] (e.g., spacing and indentation)?  Could our variable names be more descriptive?  Are there any code smells that we can eliminate?  For example, are there any methods we could extract from our `binary_search` method?
 
 Having a solid test suite will help us as we refactor.  Remember:  [red, green, refactor].  We should only refactor when our tests are all passing.  As we refactor, they should continue to pass.  This will inform us when our refactoring breaks functioning code.
 
